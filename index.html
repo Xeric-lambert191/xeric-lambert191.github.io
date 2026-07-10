@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Happy Enterprises</title>
-    <!-- Google Fonts for stylish look -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
-        body { background-color: #f0f2f5; color: #333; line-height: 1.6; animation: fadeIn 1.5s ease; }
+        body { background-color: #f0f2f5; color: #333; line-height: 1.6; }
 
-        /* Animation Keyframes */
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
-        /* Stylish Header with Gradient */
+        /* Stylish Header with Glow Animation */
         header { 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
             color: white; 
@@ -22,10 +17,26 @@
             padding: 80px 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
-        header h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
-        header p { font-size: 1.2rem; color: #e0e0e0; }
 
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; animation: slideUp 1s ease-out; }
+        /* Business Name Animation */
+        header h1 { 
+            font-size: 3rem; 
+            margin-bottom: 10px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073; }
+            to { text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6; }
+        }
+
+        header p { font-size: 1.2rem; color: #e0e0e0; animation: fadeIn 2s ease; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
 
         /* Colorful Service Cards */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
@@ -35,7 +46,7 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
             transition: all 0.4s ease; text-align: center;
         }
-        .card:hover { transform: scale(1.05); box-shadow: 0 20px 30px rgba(0,0,0,0.15); }
+        .card:hover { transform: translateY(-15px); box-shadow: 0 20px 30px rgba(0,0,0,0.15); }
         .card h3 { color: #764ba2; margin-bottom: 15px; font-size: 1.4rem; }
         .icon { font-size: 3rem; margin-bottom: 15px; display: block; }
 
@@ -56,7 +67,7 @@
     </header>
 
     <div class="container">
-        <h2 style="text-align: center; font-size: 2.2rem; color: #333;">Hamari Sewayein</h2>
+        <h2 style="text-align: center; font-size: 2.2rem; color: #333; margin-top: 20px;">Hamari Sewayein</h2>
         
         <div class="grid">
             <div class="card"><span class="icon">🏗️</span><h3>Construction & Developers</h3><p>Quality construction with modern engineering.</p></div>
@@ -82,3 +93,4 @@
 
 </body>
 </html>
+
