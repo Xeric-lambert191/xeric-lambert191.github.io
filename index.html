@@ -21,7 +21,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
         body { background-color: #030a14; color: var(--text-light); overflow-x: hidden; }
 
-        /* ==================== PRELOADER CSS (500ms BLUE-RED) ==================== */
+        /* ==================== PRELOADER CSS (10000ms BLUE-RED) ==================== */
         #preloader {
             position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
             background-color: #ffffff; /* Clean White Screen Like Kalyan Homes */
@@ -151,8 +151,8 @@
         .float-btn:hover { transform: scale(1.1); }
 
         /* Footer */
-        footer { background: #02070e; color: #64748b; padding: 40px 20px; text-align: center; font-size: 0.85rem; border-top: 1px solid rgba(197, 168, 128, 0.05); letter-spacing: 1px; }
-        footer p span { color: var(--accent); }
+        .footer { background: #02070e; color: #64748b; padding: 40px 20px; text-align: center; font-size: 0.85rem; border-top: 1px solid rgba(197, 168, 128, 0.05); letter-spacing: 1px; }
+        .footer p span { color: var(--accent); }
 
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
@@ -255,7 +255,7 @@
 
             <div class="detail-block">
                 <h3>5. फायर सुरक्षा समाधान (Fire Safety Solutions)</h3>
-                <p>आग से सुरक्षा के लिए लापरवाही की कोई जगह नहीं है। हम फायर अलार्म, ऑटोमैटिक स्प्रिंकलर सिस्टम और फायर हाइड्रेंट का इंस्टॉलेशन करते हैं। हमारी टीम फायर सेफ्टी के सभी सरकारी मानकों (Standards) को ध्यान में रखकर काम करती है।</p>
+                <p>आग से सुरक्षा के लिए लापरवाही की कोई जगह नहीं है। हम फायर अलार्म, ऑटोमैटिक स्प्रिंकलर सिस्टम और फायर हाइड्रेंट का इंस्टॉलेशन करते हैं। हमारी टीम फायर साक्षी के सभी सरकारी मानकों (Standards) को ध्यान में रखकर काम करती है।</p>
             </div>
 
             <div class="detail-block">
@@ -281,11 +281,11 @@
     </div>
 
     <!-- Corporate Footer -->
-    <footer>
+    <div class="footer">
         <p>&copy; 2019 <span>Good Happy Enterprises</span> | All Rights Reserved.</p>
-    </footer>
+    </div>
 
-    <!-- ==================== JAVASCRIPT LOGIC (500ms Timer) ==================== -->
+    <!-- ==================== JAVASCRIPT LOGIC (10000ms Timer) ==================== -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(() => {
@@ -296,12 +296,12 @@
                         preloader.style.visibility = 'hidden';
                     }, 400); // Fading transition wrap up
                 }
-            }, 500); // Exactly 500 Milliseconds (0.5 Second)
+            }, 10000); // Exactly 10000 Milliseconds (10 Seconds)
         });
 
         function openNav() { document.getElementById("mySideMenu").style.right = "0"; }
         function closeNav() { document.getElementById("mySideMenu").style.right = "-100%"; }
     </script>
 </body>
-                </html>
-                    
+</html>
+
