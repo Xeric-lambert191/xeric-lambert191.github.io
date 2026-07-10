@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
-        body { background-color: #f0f2f5; color: #333; line-height: 1.6; }
+        body { background-color: #f0f2f5; color: #333; line-height: 1.8; }
 
         /* Stylish Header with Glow Animation */
         header { 
@@ -32,26 +32,33 @@
             to { text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6; }
         }
 
-        header p { font-size: 1.2rem; color: #e0e0e0; animation: fadeIn 2s ease; }
-        
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        header p { font-size: 1.2rem; color: #e0e0e0; }
 
         .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
 
-        /* Colorful Service Cards */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+        .section-title { text-align: center; font-size: 2.2rem; color: #333; margin-top: 40px; margin-bottom: 20px; }
+
+        /* Colorful Service Cards Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px; margin-bottom: 50px; }
         
         .card { 
-            background: white; padding: 30px; border-radius: 20px; 
+            background: white; padding: 25px; border-radius: 20px; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
             transition: all 0.4s ease; text-align: center;
         }
         .card:hover { transform: translateY(-15px); box-shadow: 0 20px 30px rgba(0,0,0,0.15); }
-        .card h3 { color: #764ba2; margin-bottom: 15px; font-size: 1.4rem; }
-        .icon { font-size: 3rem; margin-bottom: 15px; display: block; }
+        .card h3 { color: #764ba2; margin-top: 10px; font-size: 1.2rem; }
+        .icon { font-size: 2.8rem; display: block; }
+
+        /* Detailed 500+ Words Section */
+        .detailed-section { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); margin-bottom: 40px; }
+        .detailed-section h2 { color: #764ba2; font-size: 2rem; margin-bottom: 25px; border-bottom: 3px solid #764ba2; display: inline-block; padding-bottom: 5px; }
+        .service-block { margin-bottom: 35px; border-left: 4px solid #764ba2; padding-left: 15px; }
+        .service-block h3 { color: #2c3e50; font-size: 1.3rem; margin-bottom: 8px; }
+        .service-block p { font-size: 1.05rem; color: #444; text-align: justify; }
 
         /* Stylish Contact Card */
-        .contact-card { background: white; padding: 40px; border-radius: 20px; margin-top: 50px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .contact-card { background: white; padding: 40px; border-radius: 20px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
         .contact-info { font-size: 1.2rem; }
         .contact-info a { color: #764ba2; text-decoration: none; font-weight: 600; transition: 0.3s; }
         .contact-info a:hover { color: #667eea; }
@@ -63,35 +70,62 @@
 
     <header>
         <h1>Good Happy Enterprises</h1>
-        <p>Premium Building & Property Solutions</p>
+        <p>Premium Building, Interior, Security & Core Cutting Experts</p>
     </header>
 
     <div class="container">
-        <h2 style="text-align: center; font-size: 2.2rem; color: #333; margin-top: 20px;">Hamari Sewayein</h2>
         
+        <!-- 8 Services Cards Grid -->
+        <h2 class="section-title">Hamari Sewayein</h2>
         <div class="grid">
-            <div class="card"><span class="icon">🏗️</span><h3>Construction & Developers</h3><p><!-- Detailed Construction Section -->
-<section style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); margin-top: 40px;">
-    <h2 style="color: #764ba2; font-size: 2rem; margin-bottom: 20px;">Construction & Developers: Humari Visheshagya</h2>
-    <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-        Ek ghar banana ya koi commercial property develop karna sirf eent-patthar ka kaam nahi hota, ye ek sapna hota hai. Good Happy Enterprises mein, hum samajhte hain ki aapki property aapki mehnat ki kamayi aur aapka future hai. Hum Bareilly aur aas-paas ke ilakon mein construction aur development ke kshetra mein ek jana-maana naam hain, jo quality, transparency aur engineering excellence ke liye jaane jaate hain.
-    </p>
-    <br>
-    <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-        <strong>Hamari Expertise:</strong> Hum sirf structure khada nahi karte, hum usse majboot aur sustainable banate hain. Humari service mein Planning aur Designing, Foundation aur RCC Structure, Modern Development, aur strict Quality Control shamil hai. Hum high-grade steel aur premium cement ka use karte hain taaki aapka ghar earthquake-resistant aur durable ho. Humara RCC slab cutting aur structural work ka experience aapko safety ki guarantee deta hai.
-    </p>
-    <br>
-    <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
-        <strong>Kyun chunein Good Happy Enterprises?</strong> Sirf isliye nahi ki hum building banate hain, balki isliye kyunki hum relationships banate hain. Humara aim hai ki jab aap humare project mein entry karein, toh aapko sukoon aur khushi mile. Humari expert team aur technical knowledge humein market mein alag khada karti hai. Chahe residential villa ho, apartment complex ho, ya commercial showroom, hum har project ko ek masterpiece banate hain. GHE ke sath, aapko milta hai—Mazbooti, Khoobsurati, aur Suraksha ka vaada.
-    </p>
-</section>
-                .</p></div>
-            <div class="card"><span class="icon">🎨</span><h3>House Painting</h3><p>Premium finish for vibrant home looks.</p></div>
-            <div class="card"><span class="icon">📹</span><h3>CCTV Installation</h3><p>High-definition safety for your peace of mind.</p></div>
-            <div class="card"><span class="icon">🛋️</span><h3>Interior Design</h3><p>Stylish, smart, and functional spaces.</p></div>
-            <div class="card"><span class="icon">🧯</span><h3>Fire Safety</h3><p>Professional fire alarm & safety installation.</p></div>
+            <div class="card"><span class="icon">🏗️</span><h3>Construction</h3></div>
+            <div class="card"><span class="icon">🎨</span><h3>House Painting</h3></div>
+            <div class="card"><span class="icon">📹</span><h3>CCTV Camera</h3></div>
+            <div class="card"><span class="icon">🛋️</span><h3>Interior Design</h3></div>
+            <div class="card"><span class="icon">🧯</span><h3>Fire Safety</h3></div>
+            <div class="card"><span class="icon">🪚</span><h3>RCC Cutting</h3></div>
+            <div class="card"><span class="icon">🔌</span><h3>AC Core Cutting</h3></div>
+            <div class="card"><span class="icon">🧱</span><h3>Brick Core Cutting</h3></div>
         </div>
 
+        <!-- Detailed 500+ Words Hindi Content Section -->
+        <section class="detailed-section">
+            <h2>हमारी सेवाओं का विस्तृत विवरण</h2>
+            
+            <div class="service-block">
+                <h3>1. बिल्डिंग कंस्ट्रक्शन और डेवलपर्स</h3>
+                <p>हम सिर्फ इमारतें नहीं खड़ी करते, हम आपके सपनों को साकार करते हैं। हमारी निर्माण प्रक्रिया में आधुनिक इंजीनियरिंग, उच्च गुणवत्ता वाले स्टील और अनुभवी आर्किटेक्ट्स का मिश्रण होता है। हम हर प्रोजेक्ट को एक चुनौती मानकर उसे समय से पहले और पूरी मजबूती के साथ पूरा करते हैं।</p>
+            </div>
+
+            <div class="service-block">
+                <h3>2. House Painting (हाउस पेंटिंग)</h3>
+                <p>घर की रौनक उसके रंग-रोगन से होती है। हम न केवल दीवारों पर पेंट करते हैं, बल्कि दीवारों की नमी (Dampness) को दूर करने और उन्हें लंबे समय तक चमकता रखने के लिए प्रीमियम क्वालिटी के वाटरprooof पेंट्स का उपयोग करते हैं।</p>
+            </div>
+
+            <div class="service-block">
+                <h3>3. CCTV Camera Installation (सीसीटीवी कैमरा)</h3>
+                <p>सुरक्षा आज की सबसे बड़ी जरूरत है। हम हाई-डेफिनिशन नाइट-विजन कैमरों का इंस्टॉलेशन करते हैं जिन्हें आप दुनिया में कहीं से भी अपने मोबाइल पर लाइव देख सकते हैं। चाहे घर हो या दुकान, हम सुरक्षा के पक्के इंतजाम करते हैं।</p>
+            </div>
+
+            <div class="service-block">
+                <h3>4. Interior Design (इंटीरियर डिज़ाइन)</h3>
+                <p>आपका घर आपके व्यक्तित्व का आईना है। हम छोटे से छोटे स्पेस का स्मार्ट तरीके से उपयोग करते हैं। चाहे फॉल्स सीलिंग हो, मॉड्यूलर किचन हो या वार्डरोब, हम आपके स्पेस को स्टाइलिश, आधुनिक और बेहद आरामदायक (Functional) बनाते हैं।</p>
+            </div>
+
+            <div class="service-block">
+                <h3>5. Fire Safety Solutions (फायर सेफ्टी)</h3>
+                <p>आग से सुरक्षा के लिए लापरवाही की कोई जगह नहीं है। हम फायर अलार्म, ऑटोमैटिक स्प्रिंकलर सिस्टम और फायर हाइड्रेंट का इंस्टॉलेशन करते हैं। हमारी टीम फायर सेफ्टी के सभी सरकारी मानकों (Standards) को ध्यान में रखकर काम करती है।</p>
+            </div>
+
+            <div class="service-block">
+                <h3>6, 7 & 8. RCC, AC और ब्रिक कोर कटिंग</h3>
+                <p>यह हमारी सबसे बड़ी तकनीकी विशेषता है। अक्सर प्लंबिंग, इलेक्ट्रिकल या एसी पाइप के लिए लोग दीवारों को हथौड़े और छेनी से तोड़ते हैं, जिससे दीवार में दरारें आ जाती हैं और स्ट्रक्चर कमजोर होता है। हमारी 'कोर कटिंग' तकनीक से हम कंक्रीट के पिलर, स्लैब (RCC Cutting), एसी के पाइप होल (AC Core Cutting) और ईंटों की दीवारों (Brick Core Cutting) में बिना किसी वाइब्रेशन के बिल्कुल गोल, साफ और सटीक होल करते हैं। यह तकनीक स्ट्रक्चर को पूरी तरह सुरक्षित रखती है और काम में जबरदस्त फिनिशिंग लाती है।</p>
+            </div>
+            
+            <p style="text-align:center; font-weight:bold; margin-top:40px; color:#764ba2;">Good Happy Enterprises के साथ, आप पाते हैं—विश्वास, गुणवत्ता और आधुनिक समाधान।</p>
+        </section>
+
+        <!-- Contact Section -->
         <div class="contact-card">
             <h2 style="margin-bottom: 20px;">Sampark Karein</h2>
             <div class="contact-info">
@@ -108,4 +142,3 @@
 
 </body>
 </html>
-
